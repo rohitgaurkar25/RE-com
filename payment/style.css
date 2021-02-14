@@ -1,0 +1,45 @@
+
+
+.bullet.completed  {
+	color:  white;
+	background-color:  #28a745;
+}
+
+
+
+.bullet.completed::after {
+	content: '';
+	position: absolute;
+	right: -60px;
+	bottom: 10px;
+	height: 1px;
+	width: 54px;
+	background-color: #28a745;
+}
+
+/* Base styles and helper stuff */
+.hidden  {
+	display:  none;
+}
+ 
+button  {
+	padding:  5px  10px;
+	border:  1px  solid  black;
+	transition:  250ms background-color;
+}
+
+button:hover  {
+	cursor:  pointer;
+	background-color:  black;
+	color:  white;
+}
+
+button:disabled:hover  {
+	opacity:  0.6;
+	cursor:  not-allowed;
+}
+
+
+  
+
+
