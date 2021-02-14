@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp and Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+
+<form action="">
+	<h1>Create Account</h1>
+	<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		
+	</div>
+	<span>or use your email for registration</span>
+	<input type="text" name="name" placeholder="Name">
+	<input type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Password">
+	<a href="./signlog.html"><button>SignUp</button></a>
+</form>
+</div>
+<div class="form-container sign-in-container">
+	<form action="#">
+		<h1>Sign In</h1>
+		<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		
+	</div>
+	<span>or use your account</span>
+	<input type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Password">
+	<a href="#">Forgot Your Password</a>
+
+	<h3><a href="../index.php">Sign In</a></h3>
+	</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<a href="../index.php"><button>X</button></a>
+			<h1>Looks like you're</h1>
+			<h1>new here!</h1>
+			<p>Signup here with your mobile number to get started</p>
+			
+			<button class="ghost" id="signIn">Sign In</button>
+			<img src="../assets/img/kisspng-online-marketplace-e-commerce-online-shopping-serv-marketplace-png-photos-5a75c4700e8d18.2020289815176674400596.png" alt="">
+		</div>
+		<div class="overlay-panel overlay-right">
+			<a href="../index.php"><button>X</button></a>
+			<h1>Login</h1>
+			<p>Start Ordering Now!</p>
+			<button class="ghost" id="signUp">Sign Up</button>
+			<img src="../assets/img/kisspng-online-marketplace-e-commerce-online-shopping-serv-marketplace-png-photos-5a75c4700e8d18.2020289815176674400596.png" alt="">
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
 
